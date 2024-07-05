@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSafe - Weather Report</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="JSDAY2NQY.js"></script>
+    <link rel="stylesheet" href="CSS.CSS">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        
+        .weather-data {
+            margin-bottom: 10px;
+        }
+        canvas {
+            max-width: 100%; /* Ensure canvas does not exceed its container's width */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .chart-container {
+            background-color: white;
+            max-width: 800px; /* Adjust maximum width as needed */
+            margin: 0 auto; /* Center align the chart container */
+        }
+        .compass {
+            position: relative;
+            width: 125px;
+            height: 125px;
+            margin: 20px auto;
+            background: url('compass.png') no-repeat center center; /* Add your compass background image */
+            background-size: cover;
+            
+        }
+
+        .needle {
+            position: absolute;
+            width: 2px;
+            height: 75px;
+            background: red; /* Or use an image: background: url('needle.png') no-repeat center center; */
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+        }
+    </style>
+</head>
+<body>
+    <button class="buttonback" onclick="location.href='MainPlymouth.html'">
+        <span>←</span> Back
+    </button>
+
+    <h1>Weather Report</h1>
+<p style="text-align: center;"> wind direction</p>
+     <div class="compass">
+        <div id="arrow" class="needle"></div>
+    </div>
+    
+
+     <div class="chart-container">
+        <canvas id="weatherChart" width="800" height="400"></canvas>
+        <canvas id="weatherChart2" width="800" height="400"></canvas>
+        <canvas id="weatherChart3" width="800" height="400"></canvas>
+        <canvas id="weatherChart4" width="800" height="400"></canvas>
+        <canvas id="weatherChart5" width="800" height="400"></canvas>
+        <canvas id="weatherChart6" width="800" height="400"></canvas>
+    </div>
+
+    
+
+   
+
+    
+</body>
+</html>
